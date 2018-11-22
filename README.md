@@ -3,7 +3,7 @@
 
 
 <p align="left">
-  <img src="https://images-na.ssl-images-amazon.com/images/I/612HOAyhc7L._SL1200_.jpg" width="350" title="Ceci est un arrosoir">
+  <img src="https://images-na.ssl-images-amazon.com/images/I/612HOAyhc7L._SL1200_.jpg" width="300" title="Ceci est un arrosoir">
 </p>
 
 
