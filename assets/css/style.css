@@ -3,6 +3,6 @@
 
 @import "{{ site.theme }}";
 
-div{
+body{
   background-color: grey;
 }
