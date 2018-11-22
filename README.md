@@ -3,7 +3,7 @@
 
 
 <p align="left">
-  <img src="pics/arrosoir.png" width="300" title="Ceci est un arrosoir alt="Un arrosoir. En plastique">
+  <img src="pics/arrosoir.png" width="300" title="Ceci est un arrosoir" alt="Un arrosoir. En plastique">
 </p>
 
 
