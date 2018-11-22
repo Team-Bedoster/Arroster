@@ -4,7 +4,6 @@
 
 <p align="left">
   <img src="https://images-na.ssl-images-amazon.com/images/I/612HOAyhc7L._SL1200_.jpg" width="350" title="Ceci est un arrosoir">
-  <img src="https://images-na.ssl-images-amazon.com/images/I/612HOAyhc7L._SL1200_.jpg" width="350" alt="accessibility text">
 </p>
 
 
@@ -29,5 +28,6 @@ _Ce projet est réalisé dans le cadre de nos études à [l'IUT de Vélizy](http
 
 
 
-
-![icon](http://www.yvelinesradio.com/infos_all/photos/2015/LOGO-UNIVERSITE-08-01-2015-17h30-27-LICENCE-COMMUNICATION-SYSTEMES-EMBARQUES.jpg)
+<p align="left">
+  <img src="http://www.yvelinesradio.com/infos_all/photos/2015/LOGO-UNIVERSITE-08-01-2015-17h30-27-LICENCE-COMMUNICATION-SYSTEMES-EMBARQUES.jpg" width="350" title="IUT Vélizy">
+</p>
