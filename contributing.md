@@ -3,24 +3,13 @@
 #### Sommaire
 
 [Informations importantes](#what-should-i-know-before-i-get-started)
-  * [Atom and Packages](#atom-and-packages)
-  * [Atom Design Decisions](#design-decisions)
 
-[How Can I Contribute?](#how-can-i-contribute)
-  * [Reporting Bugs](#reporting-bugs)
-  * [Suggesting Enhancements](#suggesting-enhancements)
-  * [Your First Code Contribution](#your-first-code-contribution)
-  * [Pull Requests](#pull-requests)
+[Ajouts et Contributions](#ajouts-et-contributions)
+  * [Catégories](#categories)
+  * [À ne pas oublier](#a-ne-pas-oublier)
 
 [Styleguides](#styleguides)
   * [Git Commit Messages](#git-commit-messages)
-  * [JavaScript Styleguide](#javascript-styleguide)
-  * [CoffeeScript Styleguide](#coffeescript-styleguide)
-  * [Specs Styleguide](#specs-styleguide)
-  * [Documentation Styleguide](#documentation-styleguide)
-
-[Additional Notes](#additional-notes)
-  * [Issue and Pull Request Labels](#issue-and-pull-request-labels)
 
 
 ## Informations Importantes
@@ -32,14 +21,14 @@
 <a href="https://github.com/Team-Bedoster/Arroster/blob/master/README.md">Description du projet</a>
 </details>
 
-#### Before Submitting A Bug Report
+## Ajouts et Contributions
 
 * **Check the [debugging guide](https://flight-manual.atom.io/hacking-atom/sections/debugging/).** You might be able to find the cause of the problem and fix things yourself. Most importantly, check if you can reproduce the problem [in the latest version of Atom](https://flight-manual.atom.io/hacking-atom/sections/debugging/#update-to-the-latest-version), if the problem happens when you run Atom in [safe mode](https://flight-manual.atom.io/hacking-atom/sections/debugging/#check-if-the-problem-shows-up-in-safe-mode), and if you can get the desired behavior by changing [Atom's or packages' config settings](https://flight-manual.atom.io/hacking-atom/sections/debugging/#check-atom-and-package-settings).
 * **Check the [FAQs on the forum](https://discuss.atom.io/c/faq)** for a list of common questions and problems.
 * **Determine [which repository the problem should be reported in](#atom-and-packages)**.
 * **Perform a [cursory search](https://github.com/search?q=+is%3Aissue+user%3Aatom)** to see if the problem has already been reported. If it has **and the issue is still open**, add a comment to the existing issue instead of opening a new one.
 
-#### How Do I Submit A (Good) Bug Report?
+#### Catégories
 
 Bugs are tracked as [GitHub issues](https://guides.github.com/features/issues/). After you've determined [which repository](#atom-and-packages) your bug is related to, create an issue on that repository and provide the following information by filling in [the template](ISSUE_TEMPLATE.md).
 
@@ -57,7 +46,7 @@ Explain the problem and include additional details to help maintainers reproduce
 * **If the problem wasn't triggered by a specific action**, describe what you were doing before the problem happened and share 
 
 
-### Suggesting Enhancements
+### À ne pas oublier
 
 This section guides you through submitting an enhancement suggestion for Atom, including completely new features and minor improvements to existing functionality. Following these guidelines helps maintainers and the community understand your suggestion :pencil: and find related suggestions :mag_right:.
 
