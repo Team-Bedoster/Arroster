@@ -1,16 +1,8 @@
-# Contributing to Atom
+# Contribution au projet <i>Arroster</i>
 
-:+1::tada: First off, thanks for taking the time to contribute! :tada::+1:
+#### Sommaire
 
-The following is a set of guidelines for contributing to Atom and its packages, which are hosted in the [Atom Organization](https://github.com/atom) on GitHub. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
-
-#### Table Of Contents
-
-[Code of Conduct](#code-of-conduct)
-
-[I don't want to read this whole thing, I just have a question!!!](#i-dont-want-to-read-this-whole-thing-i-just-have-a-question)
-
-[What should I know before I get started?](#what-should-i-know-before-i-get-started)
+[Informations importantes](#what-should-i-know-before-i-get-started)
   * [Atom and Packages](#atom-and-packages)
   * [Atom Design Decisions](#design-decisions)
 
@@ -30,20 +22,15 @@ The following is a set of guidelines for contributing to Atom and its packages, 
 [Additional Notes](#additional-notes)
   * [Issue and Pull Request Labels](#issue-and-pull-request-labels)
 
-## Code of Conduct
 
-This project and everyone participating in it is governed by the [Atom Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [atom@github.com](mailto:atom@github.com).
+## Informations Importantes
 
-
-## How Can I Contribute?
-
-### Reporting Bugs
-
-This section guides you through submitting a bug report for Atom. Following these guidelines helps maintainers and the community understand your report :pencil:, reproduce the behavior :computer: :computer:, and find related reports :mag_right:.
-
-Before creating bug reports, please check [this list](#before-submitting-a-bug-report) as you might find out that you don't need to create one. When you are creating a bug report, please [include as many details as possible](#how-do-i-submit-a-good-bug-report). Fill out [the required template](ISSUE_TEMPLATE.md), the information it asks for helps us resolve issues faster.
-
-> **Note:** If you find a **Closed** issue that seems like it is the same thing that you're experiencing, open a new issue and include a link to the original issue in the body of your new one.
+<details>
+	<summary>
+	Rappel du projet
+	</summary>
+<a href="https://github.com/Team-Bedoster/Arroster/blob/master/README.md">Description du projet</a>
+</details>
 
 #### Before Submitting A Bug Report
 
