@@ -47,7 +47,7 @@ def test_heure(val_donnee):
 	else:
 		return False
 
-def arrosage(dict_test):
+def arrosage():
 	#déclenche un arrosage immédiatement
 
 
@@ -64,22 +64,43 @@ def lecture_conditions():
 def ecriture():
 	
 
-def tests_choisis(dict_test):
+def tests_choisis(dict_test, dict_data):
 	
 	tab_test=[2]
-	if(dict_test[]==True):
-		tab_test [0] = test_heure()
-		#l'utilisateur a choisis d'arroser à une certaine heure
+	#Ce tableau de booleens sert a garder les retours de fonctions de test en memoire
 	
 	if(dict_test[]==True):
-		tab_test [1] = test_humidite()
-		#l'utilisateur a choisis d'arroser en fonction de l'humidité de la terre
-			
+		#l'utilisateur a choisis d'arroser à une certaine heure
+		tab_test [0] = test_heure(dict_data[])
+		#On verifie si la condition d'heure est validee ou non
+		print "je test l'heure"
+	
 	if(dict_test[]==True):
-		tab_test [2] = test_temperature()
+		#l'utilisateur a choisis d'arroser en fonction de l'humidité de la terre
+		tab_test [1] = test_humidite(dict_data[])
+		#On verifie si la condition d'humidite est valide ou non
+		print "je test l'humidite"
+		
+	if(dict_test[]==True):
 		#l'utilisateur a choisis d'arroser en fonction de la température ambiante
-			
+		tab_test [2] = test_temperature([dict_data])
+		#On verifie si la condition de temperature est validee ou non
+		print "je test la temperature"
+	
+	for(i in tab_test):
+	#On parcours le tableau de booleens, si il y a au moins un False, on arrose pas,
+	#sinon on arrose
+		if (i == False)
+			return False
+	arrosage()
+	print"maintenant nous allons arroser"
 			
 print "Voici les tests"
-
+dict_data = lecture_data()
+dict_test = lecture_conditions()
+#On stocke les donnees des fichiers JSON dans deux dictionnaires differents
 
+tests_choisis(dict_test, dict_data)
+#On appelle la fonction de test
+
+print"Tests termines"
