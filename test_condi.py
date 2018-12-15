@@ -49,6 +49,14 @@ def test_heure(val_donnee):
 
 def arrosage():
 	#déclenche un arrosage immédiatement
+	
+	#Alimente la valve pour l'ouvrir et la fermer
+	#on doit ouvrir la valve environ 5 secondes (ou autre) puis on referme la valve
+	#quand la valve est refermee on relance des tests pour voir si la plante est assez arrosee ou non
+	#on suppose que on doit remplir un peu plus que les conditions demandees par l'user
+	#exemple il veut que le pot soit arrosee quand humidite<50% -> on arrose jusqu'a 75%
+	#on peut supposer que l'user souhaite que l'humidite soit dans un intervalle
+	#alors on fixe la limite d'arrosage a 5% pres de la borne superieur de l'intervalle
 
 
 def lecture_data():
