@@ -1,6 +1,6 @@
 <html lang="fr">
 <head>
-	<title>Gestion de clients</title>
+	<title></title>
 	<meta charset="UTF-8"/>
 	<link rel="stylesheet" href="home_style.css"/>
 </head>

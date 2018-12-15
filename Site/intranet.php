@@ -11,7 +11,7 @@ if(!isset($_SESSION["nom"]))
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<title>Intranet</title>
+	<title></title>
 	<meta charset="utf-8"/>
 	<link rel="stylesheet" href="intranet_style.css"/>
 </head>
