@@ -34,7 +34,7 @@ CREATE TABLE `users` (
   `password` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
+-- 
 -- Déchargement des données de la table `users`
 --
 
