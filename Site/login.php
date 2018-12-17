@@ -1,43 +1,36 @@
 <?php
 require("database_settings.php");
 
-$bd="myspraying"; 
-$table="users";
 
+$file = "data/login.csv";
 
 if(isset($_POST['login'], $_POST['password']))
-{
-	if(!empty($_POST['login']) and !empty($_POST['password']))
 	{
-		$connexion=mysqli_connect($server,$login,$password)
-		or die("Connexion impossible au serveur $server pour $login");
-
-		mysqli_select_db($connexion,$bd)
-		or die("Impossible d'accèder à la base de données");
-
-		$requete="SELECT * FROM $table ORDER BY id";
-		$resultat=mysqli_query($connexion,$requete);
-
-		$username = $_POST['login'];
-		$pass = $_POST['password'];
-		while($row = mysqli_fetch_row($resultat))
+	if(!empty($_POST['login']) and !empty($_POST['password']))
 		{
-			if($username == $row[1] and $pass = $row[2])
+		
+		$login = $_POST['login'];
+		$password = $_POST['password'];
+		
+		$pointeur = fopen($file, 'r');
+		
+		while(!feof($pointeur))
 			{
-				session_start();
-				$_SESSION["nom"] = $_POST['login'];
-				mysqli_close($connexion);
-				header('Location: intranet.php');
+			$t = fgetcsv($pointeur, 1024, ",");
 			}
-			else
-			{
-				mysqli_close($connexion);
-				header("Location: index.php?id=1");
-			}
+		
+		
+		if($login == $t[0] and $password == $t[1]){
+			fclose($pointeur);
+			session_start();
+			$_SESSION['login'] = $login;
+			$_SESSION['role'] = "admin";
+			header('Location: overview.php');
+		} else{
+			header("Location: index.php?id=1");
+			echo "<p> Le nom d'utilisateur ou le mot de passe n'existe pas dans notre base de données.</p>";
 		}
 		
-		
-	}
-	
+	}		
 }
 ?>

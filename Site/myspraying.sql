@@ -19,26 +19,26 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données :  `myspraying`
+-- Base de données :  'myspraying'
 --
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `users`
+-- Structure de la table 'users'
 --
 
-CREATE TABLE `users` (
-  `id` int(11) NOT NULL,
-  `username` varchar(25) NOT NULL,
-  `password` varchar(30) NOT NULL
+CREATE TABLE 'users' (
+  'id' int(11) NOT NULL,
+  'username' varchar(25) NOT NULL,
+  'password' varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Déchargement des données de la table `users`
+-- Déchargement des données de la table 'users'
 --
 
-INSERT INTO `users` (`id`, `username`, `password`) VALUES
+INSERT INTO 'users' ('id', 'username', 'password') VALUES
 (1, 'admin', 'admin');
 
 --
@@ -46,21 +46,21 @@ INSERT INTO `users` (`id`, `username`, `password`) VALUES
 --
 
 --
--- Index pour la table `users`
+-- Index pour la table 'users'
 --
-ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `username` (`username`);
+ALTER TABLE 'users'
+  ADD PRIMARY KEY ('id'),
+  ADD UNIQUE KEY 'username' ('username');
 
 --
 -- AUTO_INCREMENT pour les tables déchargées
 --
 
 --
--- AUTO_INCREMENT pour la table `users`
+-- AUTO_INCREMENT pour la table 'users'
 --
-ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+ALTER TABLE 'users'
+  MODIFY 'id' int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
