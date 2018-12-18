@@ -1,0 +1,19 @@
+
+body{
+	background-color: #389b35;
+}
+
+border:dashed 5px #16754a;
+-moz-border-radius-topleft: 27px;
+-moz-border-radius-topright:27px;
+-moz-border-radius-bottomleft:26px;
+-moz-border-radius-bottomright:26px;
+-webkit-border-top-left-radius:27px;
+-webkit-border-top-right-radius:27px;
+-webkit-border-bottom-left-radius:26px;
+-webkit-border-bottom-right-radius:26px;
+border-top-left-radius:27px;
+border-top-right-radius:27px;
+border-bottom-left-radius:26px;
+border-bottom-right-radius:26px;
+
