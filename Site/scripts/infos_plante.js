@@ -1,9 +1,9 @@
 
-window.onload = event_handler;
+window.onload = initPage;
 
 
 function event_handler(){
-	document.getElementById("enregistrer").onclick = requeteEnregistrement;
+	document.getElementById("cadre").onfocus = requeteEnregistrement;
 	
 }
 
@@ -30,17 +30,46 @@ function callback_Enregistrement(){
 
 
 function initPage() {
-	xhrPeupleChoix= new XMLHttpRequest();
-	xhrPeupleChoix.onreadystatechange = callback_peupleChoix;
-	xhrPeupleChoix.open("GET", "voiliers.xml");
-	xhrPeupleChoix.send();
+	
+	let magnolia = new Image();
+	magnolia.src = "https://bit.ly/2EBnS9j";
+	magnolia.style.width= '12%';
+	
+	let myosotis = new Image();
+	myosotis.src = "https://bit.ly/2GwQPFI";
+	
+	let marigold = new Image();
+	marigold.src = "https://bit.ly/2T23guS";
+	
+	
+	var globalView = document.getElementById("global");
+	
+	cadre = document.createElement("div");
+	cadre.id = 'cadre';
+	cadre.style.width= '12%';
+	cadre.appendChild(magnolia);
+	globalView.appendChild(cadre);
+	
+	cadre = document.createElement("div");
+	cadre.id = 'cadre';
+	cadre.style.width= '12%';
+	cadre.appendChild(myosotis);
+	globalView.appendChild(cadre);
+	
+	cadre = document.createElement("div");
+	cadre.id = 'cadre';
+	cadre.style.width= '12%';
+	cadre.appendChild(marigold);
+	globalView.appendChild(cadre);
+	
+	
+	
 	
 	xhrAfficheChoix = new XMLHttpRequest();
 	xhrAfficheChoix.onreadystatechange = callback_afficheChoix;
 	xhrAfficheChoix.open("GET", "voiliers.xml");
 	xhrAfficheChoix.send();
 	
-	document.getElementById("choix").onchange = callback_afficheChoix;
 	
 
 }
