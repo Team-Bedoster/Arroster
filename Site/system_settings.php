@@ -35,7 +35,7 @@
 				<br>
 				<input id="aiInactif" type="radio" name="arrosage_instantane" value="Inactif"><label>Inactif</label>
 				<p>Temps d'arrosage: </p><p id="temps_arrosage"></p>
-				<input id="arroser" type="button" name="lancement_arrosage" onClick="launchTimer()" value="Arroser">
+				<input id="arroser" type="button" name="lancement_arrosage" onClick="init()" value="Arroser">
 			</div>
 
 			<div id="pac"><!--pac = Paramètres Arrosage Conditionnel-->
