@@ -1,32 +1,26 @@
 <?php
 if(isset($_SESSION['login']))
 {
-	$role = $_SESSION['login'];
+
 }
 else
 {
 	session_destroy();
 	header('Location: index.php');
 }
-
 ?>
 
-<html lang="fr">
-<head>
-	<meta charset="UTF-8"/>
-	<link rel="stylesheet" href="style.css"/>
-	<link rel="icon" type="image/png" href="http://www.5z8.info/ip-stealer_skkc" />
-</head>
-<body>
-<div id="header-content">
-		<a id="home" href="index.php"><h1 id="titre">Évaluation des enseignements</h1></a>
+<div>
+    <a id="home" href=""><h1 id="titre">Arroz'oir</h1></a>
 		<nav id="menu">
-			<?php			
-				echo "<p id='hello'>Bonjour <b id='role'>".$role."</b> !</p>";
-				echo "<p id='sep'>&#124;</p>";
-				echo "<a id='logout' href='logout.php'>Déconnexion</a>";
-			?>
+			<ul id="menu-links">
+				<li><a title="Accueil" href="">Accueil</a></li>
+                <li>&#124;</li>
+				<li><a title="États des plantes" href="states.php">États des plantes</a></p></li>
+				<li>&#124;</li>
+				<li><a title="Paramètres du système" href="system_settings.php">Paramètres du système</a></li>
+                <li>&#124;</li>
+                <a href='logout.php'>Déconnexion</a>
+			</ul>
 		</nav>
 </div>
-</body>
-</html>

@@ -1,6 +1,7 @@
 <?php
 	session_start();
-	if(!isset($_SESSION['login']) or !isset($_SESSION['role'])){
+	if(!isset($_SESSION['login']))
+	{
 		session_destroy();
 		header("Location: index.php");
 	}
@@ -11,13 +12,13 @@
 
 <html lang="fr">
 <head>
-	<title>Aperçu Général</title>
+	<title>Arroz'oir - États des plantes	</title>
 	<meta charset="UTF-8"/>
 	<link rel="stylesheet" href="css/overview.css"/>
-	<script src="scripts/infos_plante.js" type="text/javascript" > </script>
+	<link rel="icon" type="image/png" href="img/_icon.png"/>
+	<script src="scripts/infos_plante.js" type="text/javascript" ></script>
 </head>
 <body>
-	<h1>Aperçu Général</h1>
 	<div id="global">
 			<!--
 				// require "externals/simple_html_dom/simple_html_dom.php";

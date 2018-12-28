@@ -1,6 +1,6 @@
 <html lang="fr">
 <head>
-	<title></title>
+	<title>Arroz'oir - Connexion</title>
 	<meta charset="UTF-8"/>
 	<link rel="stylesheet" href="home_style.css"/>
 </head>
