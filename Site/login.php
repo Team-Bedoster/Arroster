@@ -15,7 +15,7 @@ if(isset($_POST['login'], $_POST['password']))
 		{
 			$t = fgetcsv($pointeur, 1024, ",");
 			if($login == $t[0] and $password == $t[1]){
-				fclose($pointeur);
+
 				session_start();
 				$_SESSION['login'] = $login;
 
@@ -25,6 +25,7 @@ if(isset($_POST['login'], $_POST['password']))
 				header("Location: index.php?id=1");
 			}
 		}
+		fclose($pointeur);
 	}
 }
 ?>
