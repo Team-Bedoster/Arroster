@@ -2,20 +2,25 @@
 <head>
 	<title>Arroz'oir - Connexion</title>
 	<meta charset="UTF-8"/>
-	<link rel="stylesheet" href="home_style.css"/>
+	<link rel="stylesheet" href="css/css_formulaire.css"/>
 </head>
 <body>
-	<h1>Connexion</h1>
-	<fieldset>
-	<form action='login.php' method='POST'>
-		<label>Nom d'utilisateur:</label><input type="text" name="login" required/>
-		<br/>
-		<label>Mot de passe:</label><input type="password" name="password" required/>
-		<br/>
-		<input type="submit" value="Connexion" />
-	</form>
-	</fieldset>
+	<div id="formulaire">
+	
+		<h1>Connexion</h1>
 
+
+		<form action='login.php' method='POST'>
+		
+			<label>Nom d'utilisateur:</label><input type="text" name="login" required/>
+			<br/>
+			<label>Mot de passe:</label><input type="password" name="password" required/>
+			<br/>
+			<input type="submit" value="Login" />
+		
+		</form>
+	
+	</div>
 <?php
 session_start();
 if(isset($_SESSION["login"]))
