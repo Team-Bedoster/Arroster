@@ -14,7 +14,7 @@ else
     <a id="home" href=""><h1 id="titre">Arroz'oir</h1></a>
 		<nav id="menu">
 			<ul id="menu-links">
-				<li><a title="Accueil" href="">Accueil</a></li>
+				<li><a title="Accueil" href="overview.php">Accueil</a></li>
                 <li>&#124;</li>
 				<li><a title="États des plantes" href="states.php">États des plantes</a></p></li>
 				<li>&#124;</li>
