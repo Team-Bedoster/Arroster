@@ -1,6 +1,9 @@
 <?php
 $enArrosage = $_POST['arrose'];
 
+/* SCRIPT DE TESTS - Création d'un fichier qui contient la date
+On vérifie que l'activation de l'arrosage instantané produit une action
+
 if($enArrosage == true)
 {
     $thedate=date("D d F - H:i");
@@ -29,5 +32,5 @@ $i++;
 else
 {
     echo "bon";
-}
+}*/
  ?>

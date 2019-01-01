@@ -9,7 +9,7 @@ function startSpraying()
     {
         declenchement = new XMLHttpRequest();
         declenchement.onreadystatechange = callback_enregistre;
-        declenchement.open("POST", "../simuArrosage.php");
+        declenchement.open("POST", "simuArrosage.php");
         declenchement.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
         var requete = "arrose=" + true;
