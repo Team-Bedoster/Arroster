@@ -3,34 +3,37 @@ $enArrosage = $_POST['arrose'];
 
 /* SCRIPT DE TESTS - Création d'un fichier qui contient la date
 On vérifie que l'activation de l'arrosage instantané produit une action
+*/
 
-if($enArrosage == true)
+$file="test_simu_arrosage.txt";
+
+if (file_exists($file))
 {
-    $thedate=date("D d F - H:i");
-    $file="ladate.txt";
+    $pointeur=fopen($file,"a");
+    if($enArrosage == true)
+    {
+        fputs($pointeur,"\nmarche");
+    }
+    else
+    {
+        fputs($pointeur, "\narrêt");
+    }
 
-    if (file_exists($file)){
- $pointeur=fopen($file,"a");
- fputs($pointeur,"\n".$thedate);
- fclose($pointeur);
-} else {
- $pointeur=fopen($file,"w");
- fputs($pointeur,$thedate);
- fclose($pointeur);
-}
-echo "Affichage ";
-
-$i=0;
-$pointeur=fopen($file,"r");
-while (!feof($pointeur))
-{
-$t=fgets($pointeur,1024);
-echo "Ligne : ".$i." => ".$t."<br>";
-$i++;
-}
+    fclose($pointeur);
 }
 else
 {
-    echo "bon";
-}*/
+    $pointeur=fopen($file,"w");
+    if($enArrosage == true)
+    {
+        fputs($pointeur,"marche");
+    }
+    else
+    {
+        fputs($pointeur, "arrêt");
+    }
+
+    fclose($pointeur);
+}
+exit(0);
  ?>

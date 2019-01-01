@@ -8,12 +8,12 @@ function startSpraying()
     if(verifActif.checked)
     {
         declenchement = new XMLHttpRequest();
-        declenchement.onreadystatechange = callback_enregistre;
+        declenchement.onreadystatechange = callback_arrosage;
         declenchement.open("POST", "simuArrosage.php");
         declenchement.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
-        var requete = "arrose=" + true;
-        declenchement.send(requete);
+        var requete_declenchement = "arrose=" + true;
+        declenchement.send(requete_declenchement);
 
         launchTimer();
         document.getElementById("arroser").value = "Arrêter l'arrosage";
@@ -38,6 +38,11 @@ function launchTimer()
 
 function stopSpraying()
 {
+    var requete_arret = "arrose=" + false;
+    declenchement.open("POST", "simuArrosage.php"); //Réouverture de la requête XMLHttp
+    declenchement.send(requete_arret);
+
+
     window.clearTimeout(chrono);
     ss = 0;
     s = 00;
@@ -46,10 +51,11 @@ function stopSpraying()
     document.getElementById("arroser").value = "Arroser";
     document.getElementById("arroser").onclick = startSpraying;
     document.getElementById("aiInactif").disabled = 0;
+
 }
 
 
-function callback_enregistre()
+function callback_arrosage()
 {
     if(declenchement.readyState == 4 && declenchement.status == 200)
 	{
