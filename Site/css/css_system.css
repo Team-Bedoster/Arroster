@@ -1,0 +1,117 @@
+
+body{
+	background-color:#000000;
+}
+
+#containerglobal{
+	width:100%;
+	background-color:white;
+	
+}
+
+#glob{
+	margin-top:17px;
+	height:598px;
+	background:url("../img/bleu.jpg");
+	background-repeat:no-repeat;	
+	background-size:100%;
+	background-image:cover;
+
+ }
+	
+	
+	
+#instant{
+	width:270px;
+	margin-top:-398px;
+	margin-left:370px;
+	background-color:white;
+	border-color:#32CD32;
+	border-width:2px;
+	height:320px;
+}
+
+#arrosage_instantane{
+	margin-top:30px;
+	font-size:20px;
+
+	
+}
+	
+#arroser{
+	height:30px;
+	border-color:000000;
+	border-width:0.2px;
+}
+
+#cond{
+	margin-left:700px;
+	width:700px;
+	margin-top:-434px;
+	background-color:white;
+	border-color:#32CD32;
+	border-width:2px;
+}
+
+
+
+#arrosage_conditionnel{
+	font-size:20px;
+	margin-left:;
+	margin-bottom:-150px;
+	margin-top:78px;
+	
+}
+
+
+
+#pac{
+	font-size:20px;
+	margin-left:350px;
+	
+	
+}
+
+#valider{
+	width:100px;
+	height:50px;
+	border-color:000000;
+	border-width:0.2px;
+}
+
+select{
+	color:#228B22;
+}
+
+h2{
+	font-family:"Montserrat", Gadget, sans-serif;
+	text-shadow: 1px 2px 3px rgba(0,0,0, 0.5);	
+}
+
+#planteG{
+	margin-left:1430px;
+	margin-top:398px;
+	width:450px;
+}
+
+#planteD{
+	margin-left:-150px;
+	margin-top:-240px;
+	position:relative;
+	
+}
+	
+label{
+	font-family:Garamond, serif;
+}
+
+h3{
+	font-family:'MS Sans Serif', Geneva, sans-serif;
+	background: -webkit-linear-gradient(#eeeeee, #000000);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+p{
+	font-family:Garamond, serif;
+}
