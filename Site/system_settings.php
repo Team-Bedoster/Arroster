@@ -37,20 +37,20 @@
 				<input id="arroser" onclick="startSpraying();" type="button" name="lancement_arrosage" value="Arroser">
 			</div>
 		</fieldset>
-		
+
 		<fieldset id="cond">
 			<form action='' method='POST'>
 				<div id="arrosage_conditionnel">
-					<h2>Mode d'arrosage</h2>
-					<input id="ac" type="radio" value="Instantané" name="type_arrosage" required/><label>Instantané</label>
+					<h2>Arrosage conditionnel</h2>
+					<input id="acActif" type="radio" value="Actif" name="arrosage_conditionnel" required/><label>Actif</label>
 					<br/></br>
-					<input id="ai" type="radio" value="Conditionnel" name="type_arrosage" required/><label>Conditionnel</label>
+					<input id="acInactif" type="radio" value="Inactif" name="arrosage_conditionnel" required/><label>Inactif</label>
 					<br/>
 				</div>
 
 
 				<div id="pac"><!--pac = Paramètres Arrosage Conditionnel-->
-					<h2>Arrosage conditionnel</h2>
+					<h2>Paramètres</h2>
 					<h3>Fréquence de tests:</h3>
 					<input type="text" name="frequence_tests" id="frequence_tests">
 					<select name="uft" id="uft"><!--uft = unité de fréquence de tests (c-à-d minutes ou heures)-->
