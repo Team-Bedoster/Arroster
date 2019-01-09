@@ -1,29 +1,38 @@
 
 body{
-	background-color:#000000;
+	background-color: yellow;
+	width: 100%;
+	height: 89%;
+	min-height: 89%;
+	z-index: -999;
 }
 
 #containerglobal{
-	width:100%;
+	height: 100%;
+	width: auto;
 	background-color:white;
 	
 }
 
 #glob{
-	width: 100%;
-	height:100%;
-	background:url("../img/bleu.jpg");
-	background-repeat:no-repeat;	
-	background-size:100%;
-	background-image:cover;
+	padding-top: 15%;
+	width: auto;
+	height: auto;
+	min-height: 100%;
+	background: url("../img/bleu.jpg");
+	background-repeat: no-repeat;	
+	background-size: cover;
+	background-position: fixed;
+	z-index: -1;
 
  }
 	
 	
 	
 #instant{
+	position: fixed;
 	width:270px;
-	margin-top:-398px;
+	margin-top: 0%;
 	margin-left:370px;
 	background-color:white;
 	border-color:#32CD32;
@@ -34,8 +43,6 @@ body{
 #arrosage_instantane{
 	margin-top:30px;
 	font-size:20px;
-
-	
 }
 	
 #arroser{
@@ -45,9 +52,10 @@ body{
 }
 
 #cond{
+	position: fixed;
 	margin-left:700px;
 	width:700px;
-	margin-top:-434px;
+	margin-top: 0%;
 	background-color:white;
 	border-color:#32CD32;
 	border-width:2px;
@@ -57,7 +65,7 @@ body{
 
 #arrosage_conditionnel{
 	font-size:20px;
-	margin-left:;
+	
 	margin-bottom:-150px;
 	margin-top:78px;
 	
@@ -66,8 +74,9 @@ body{
 
 
 #pac{
-	font-size:20px;
-	margin-left:350px;
+	font-size: 20px;
+	margin-left: 350px;
+	font-family: "Calibri";
 	
 	
 }
@@ -89,15 +98,17 @@ h2{
 }
 
 #planteG{
-	margin-left:1430px;
-	margin-top:398px;
-	width:450px;
+	background: url('img/plante_settings.png');
+	float: left;
+	margin-left:-150px;
+	margin-top:-240px;
 }
 
 #planteD{
-	margin-left:-150px;
-	margin-top:-240px;
-	position:relative;
+	right: 0;
+	top: 0;
+	right: 30px;
+	position: relative;
 	
 }
 	
@@ -107,7 +118,7 @@ label{
 
 h3{
 	font-family:'MS Sans Serif', Geneva, sans-serif;
-	background: -webkit-linear-gradient(#eeeeee, #000000);
+	background: -webkit-linear-gradient(#5b5b5c, #181818);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }

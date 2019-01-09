@@ -1,12 +1,21 @@
 
 
 #container {
-top:0;
-left:0;
-height:15%;
-width:100%;
-padding:0;
+	top:0;
+	left:0;
+	height:15%;
+	width:100%;
+	max-width: 100%;
+	border-bottom: 5px solid blue;
+	position: fixed;
+	background-color: #EEEEEE;
+	opacity: 0.4;
+	transition: 1s;
+}
 
+#container:hover{
+	opacity: 0.8;
+	background-color:  #98989e;
 }
 
 
@@ -16,46 +25,40 @@ padding:0;
 	left: 0;
 	width: 100%;
 	height: 15%;
-	background-color:#EEEEEE;
-    
     z-index: 300;
-   
     display: flex;
 	flex-flow: row wrap;
 }
-body{
-margin:0px;
-padding:0px;
 
+body{
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 
 #container #headerarea {
-   
-    
-    
-    align-items: center;
+	align-items: center;
 }
 
 #logo {
-    margin-left:300px;   
+    margin-left: 5%;
 	margin-top:-40px;
 }
  
 #search{
-	margin-left:50px;
-	padding-left:20px;
+	margin-left: 2%;
 	margin-top:-20px;
 	
 }
 #searchtext{
 	width:450px;
 	height:40px;
-	border: 1px solid #ddd;
+	
 }
 
 .block{
-	height:40px;
+	height: 20px;
 	color:#228B22;
 }
 
@@ -67,7 +70,7 @@ input{
 
 
 #menu{
-    padding: 20px;
+	margin-left: 15%;
     background: none;
   
 	
@@ -77,9 +80,6 @@ input{
 #menu-links{
 	list-style: none;
 	display: flex;
-
-	
-	
 }
 
 
@@ -94,7 +94,7 @@ li {
 	color: #454545;
 	text-transform: uppercase;
 	font-weight: bold;
-
+	height: 14px;
 	
 }
 
@@ -103,7 +103,7 @@ ul li a{
     text-align: center;
     color: rgba(0, 0, 0, .7); 
     text-decoration: none;
-    padding: 8px 8px 17px 8px;
+    margin: 0px 5px 0px 5px;
 	
 }
 
@@ -124,92 +124,38 @@ ul li a:active{
 ul li:hover a{
 	color: #FFFFFF;
 	
-	
-}
-
-
-footer{
-
-background:#CCC;
-
-
-position:absolute;
-
-bottom:0;
-
-width:100%;
-
-padding-top:50px;
-
-height:55px;
-
-margin-left:-10px;
-
-padding-right:10px;
-
-}
-/*
-body {
-  background:url("../img/formulaire.jpg");
-  animation: chbg 5s infinite alternate;
-  background-size:100%;
-}
-@keyframes chbg {
-  100% {
-    background:url("../img/formulaire.jpg");
-  background-size:100%
-  }
-  100% {
-    background:url("../img/plante.jpg");
-  background-size:100%
- 
-}
-*/
- 
- 
-footer h2{
-	margin-top:-35px;
-	margin-left:15px;
-}
-
-footer p{
-	margin-top:-42px;
-	margin-left:50px;
-	font-weight:bold;
 }
 
 
 
 #containerbarre{
-width:8px;
-padding-top:100px;
-margin-left:-10px;
+	width:8px;
+	padding-top:100px;
+	margin-left:-10px;
 }
 
 #vertical a {
-  background-color: #006633; 
-  color: black; 
-  display: block; 
-  padding: 12px; 
-  text-decoration: none; 
-  height:150px;
+	background-color: #006633; 
+	color: black;
+	display: block;
+	text-decoration: none; 
+	height:150px;
 }
 
 #vertical a:hover {
-  background-color: #ccc; 
+	background-color: #ccc; 
 }
 
 #vertical a.active {
-   
-  color: black;
+	color: black;
 }
 
 #boutonsearch{
 	margin-bottom:-16px;
 	margin-left:-5px;
 	margin-top:-25px;
-	width:45px;
-	height:41px;
+	width:40px;
+	height:39px;
 }
 
 

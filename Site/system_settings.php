@@ -24,8 +24,12 @@
 	?>
 <div id="containerglobal">
 	<fieldset id="glob">
-		<img id="planteG" src="img/plante_settings.png" >
-		<img id="planteD" src="img/plante_settings.png" >
+		<div id="planteG">
+		</div>
+		
+		<img id="planteD">
+		
+		
 		<fieldset id="instant">
 			<div id="arrosage_instantane">
 				<h2>Arrosage instantané</h2>
@@ -75,7 +79,7 @@
 	</fieldset>
 </div>
 <?php
-
+require_once("footer.php");
 ?>
 </body>
 </html>
