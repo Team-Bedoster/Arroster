@@ -29,7 +29,7 @@ else
     
 		<div id="search">
 			<form class = "s" method="post" name="headerseach">
-				<input id="searchtext" type="text" placeholder="rechercher..." >
+				<input id="searchtext" type="text" placeholder=" Rechercher..." >
 				<input id="boutonsearch" type="image" src="img/bouton.png" onClick="clickit(this);">
 					
 			</form>
