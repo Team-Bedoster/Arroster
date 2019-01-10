@@ -9,12 +9,12 @@
 	border-bottom: 5px solid blue;
 	position: fixed;
 	background-color: #EEEEEE;
-	opacity: 0.4;
+	opacity: 0.8;
 	transition: 1s;
 }
 
 #container:hover{
-	opacity: 0.8;
+	opacity: 0.95;
 	background-color:  #98989e;
 }
 
