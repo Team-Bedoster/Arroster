@@ -4,6 +4,6 @@
 <link rel="stylesheet" href="css/css_footer.css"/>
 
 <footer>
-		<p id="copyright"><a href="">&copy; Arroz'oir</a></p>
+		<p id="copyright"><a target="_blank" href="https://tinyurl.com/arroz-oir">&copy; Arroz'oir</a></p>
 		<div class="clear"></div>
 </footer>

@@ -1,9 +1,10 @@
 
 body{
-	padding-top: 15%;
+	padding-top: 7%;
 	background-color: #389b35;
-	background: url('http://tpe-synchrotron-soleil.e-monsite.com/medias/files/foret-tropicale.jpg');
 	width: 100%;
+	height: 100%;
+	position: fixed;
 }
 
 
@@ -12,10 +13,20 @@ body{
 }
 
 div#global{
+	overflow: auto;
+	margin-top: 0%;
+	height: 100%;
+	max-height: 100%;
 	display: flex;
+	position: fixed;
 	flex-direction: row;
 	justify-content: center;
+	align-items: center;
 	width: 100%;
+	background: url('https://media.giphy.com/media/1lRrsraIsEYRW/giphy.gif') no-repeat center center fixed;
+	background-image: cover;
+	background-size: cover;
+	z-index: -5;
 }
 
 div#cadre{
@@ -23,7 +34,7 @@ div#cadre{
 	width: 100%;
 	height: 20%;
 	box-sizing: border-box;
-	margin: 0px 0px 0% 5%;
+	margin: 0px 5% 20% 5%;
 	-moz-border-radius-topleft: 27px;
 	-moz-border-radius-topright:27px;
 	-moz-border-radius-bottomleft:26px;

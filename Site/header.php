@@ -22,7 +22,7 @@ else
 	<div id="headerarea">
 	
 		<div id="logo">
-		<a href="/Arroster-web/Site/header.php">
+		<a href="overview.php">
 			<img src = "img/logo.png" >
 		</a>
 		</div>
