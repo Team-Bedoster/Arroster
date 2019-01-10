@@ -24,12 +24,6 @@
 	?>
 <div id="containerglobal">
 	<fieldset id="glob">
-		<div id="planteG">
-		</div>
-		
-		<img id="planteD">
-		
-		
 		<fieldset id="instant">
 			<div id="arrosage_instantane">
 				<h2>Arrosage instantané</h2>

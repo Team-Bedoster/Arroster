@@ -13,6 +13,8 @@
 	transition: 1s;
 	margin-bottom: 0%;
 	z-index: 300;
+	display: flex;
+	flex-direction: row;
 }
 
 #container:hover{
@@ -159,9 +161,9 @@ ul li:hover a{
 
 #boutonsearch{
 	margin-left: 100%;
-	margin-top: -10%;
+	margin-top: -12%;
 	width: 20%;
-	height: 100%;
+	height: 194%;
 	border: 1px solid black;
 }
 
