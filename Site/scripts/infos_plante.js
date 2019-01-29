@@ -5,13 +5,13 @@ function initPage() {
 
 
 	let magnolia = new Image();
-	magnolia.src = "https://bit.ly/2EBnS9j";
+	magnolia.src = "img/magnolia.jpg";
 
 	let myosotis = new Image();
-	myosotis.src = "https://bit.ly/2GwQPFI";
+	myosotis.src = "img/myosotis.jpg";
 
 	let marigold = new Image();
-	marigold.src = "https://bit.ly/2T23guS";
+	marigold.src = "img/marigold.jpg";
 
 
 	var globalView = document.getElementById("global");
