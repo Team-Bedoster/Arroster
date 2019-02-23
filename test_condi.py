@@ -1,5 +1,95 @@
 #coding: utf-8
+#A faire : fonction pour lister les bouteilles et allouer un ID [0-127], une bouteille est branchée par cordon, on vérifique qu'elle est branchée par 
+#un appel système et si elle est branchée,
+#On ajoute une bouteille à la liste des bouteilles courantes.
+#Faire une liste de bouteille de bouteilles, la mettre à jour en récupérant les info (humidité,...)
+#Fonction qui envoie les paramètres d'arrosage à l'arduino
+#Changer les conditions d'arrosage. Utiliser des fonctions d'accès I2C
+#	long[] read_i2c_block_data(int addr,char cmd)
+#		Block Read transaction.
+#	write_i2c_block_data(int addr,char cmd,long vals[])
+#		Block Write transaction.
+
+
 import json
+import csv
+import smbus
+import time
+
+# for RPI version 1, use "bus = smbus.SMBus(0)"
+bus = smbus.SMBus(1)
+
+
+class bouteille:
+	def _init_(self, fichier):
+		self.dict_test = lecture_fichier('data_conditions.json')
+		self.id = attribID()
+		while True:
+			if scanReseau():
+				break
+		self.dict_data = lecture_fichier('data_capteurs.json')
+	
+	def attribID():
+	#Fonction permettant d'allouer un ID à une bouteille branchée.
+		i = 0
+		with open('tabId.csv', r) as csvfile:
+			reader = csv.reader(csvfile, delimiter = ',')
+			while reader:
+				tabId[i] = reader
+				i+=1
+				
+	def lecture_fichier(self.id):
+		with open(nom_fichier, "r") as json_data:
+			dictionnaire = json.load(json_data)
+		return dictionnaire
+
+
+def scanReseau():
+	#Scan les bouteilles présentes sur le réseau et retourne false tant qu'il n'y a pas de nouvelle bouteille
+	#retourne l'adresse de la nouvelle bouteille si elle existe
+	#les arduino possèdent un fichier contenant leur id, si une bouteille n'a pas ce fichier, c'est la nouvelle bouteille
+	
+	
+	
+def writeNumber(value):
+#Fonction qui envoie les paramètres d'arrosage à l'arduino.
+    #bus.write_byte(address, value)
+    bus.write_byte_data(address, 0, value)
+    return -1
+
+def readNumber():
+#Fonction qui reçois les conditions courantes d'un pot.
+    #number = bus.read_byte(address)
+    number = bus.read_byte_data(address, 1)
+    return number
+
+def testBouteille():
+	#Fonction pour lister les bouteilles et allouer un ID [0-127], une bouteille est branchée par cordon, on vérifique qu'elle est branchée par un appel système
+	#On ajoute alors une bouteille à la liste des bouteilles courantes.
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 class DonneesPlantesTest:
@@ -13,11 +103,6 @@ class DonneesPlantesTest:
 		
         self.dict_data = lecture_data('data_capteurs.json')
 		self.dict_test = lecture_conditions('data_conditions.json')
-	
-	def lecture_fichier(nom_fichier):
-		with open(nom_fichier) as json_data:
-			dictionnaire = json.load(json_data)
-		return dictionnaire
 
 class TestsArrosage:
  """Classe définissant les tests faisables par le programme.
