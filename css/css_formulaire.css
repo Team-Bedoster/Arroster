@@ -1,0 +1,359 @@
+
+body{
+
+	
+ 
+}
+
+
+input[type=submit]
+{
+	background: #303030;
+    color:  white;
+    padding: 18px 5px;
+	margin: 25px 190px;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+    width: 50%;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Calibri;
+
+}
+
+input[type=submit]:hover{
+	background-color: #228B22;
+	}
+
+.icon-bar {
+	position: fixed;
+	top: 39%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.icon-bar i {
+	position: absolute;
+	display: block;
+	text-align: center;
+	padding: 10px;
+	margin-left: 70px;
+	transition: all 2s ease;
+	color: black;
+	font-size: 45px;
+}
+.icon-bar input {
+	display: block;
+	text-align: center;
+	margin-left: 110px;
+	transition: all 2s ease;
+	color: red;
+	border-width: 2px;
+	border-color: #b9191c;
+	background-color: dark-grey;
+}
+.icon-bar input:hover{
+	background-color: black;
+}
+
+
+#formulaire{
+	width:40%;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top:100px;
+	padding: 30px;
+    border-radius: 25px;
+    border: 1px solid #f1f1f1;
+    background-image:url("../img/formulaire.jpg");
+	background-image: cover;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+
+h1{
+	font-family:"Arial Black", Gadget, sans-serif;
+	margin-left:279px;
+	font-size:35px;
+    text-shadow: 1px 2px 3px rgba(0,0,0, 0.5);
+	
+}
+
+
+label{
+	font-family:"Arial Black", Gadget, sans-serif;
+	font-size:20px;
+	
+	
+	
+}
+
+
+
+html
+{
+	background-image:url("../img/fond.jpg");
+	background-size: auto;
+	background-repeat:no-repeat;
+	
+}
+ 
+input[type=text], input[type=password] /*Modification des input du formulaire*/
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #228B22;
+	height:50px;
+}
+
+
+
+input[type=submit]:active{
+	
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+
+}
+/*
+#container {
+    background-color:000000;
+    background-repeat: repeat;
+    background-size: auto auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+#headerarea {
+    position: relative;
+    z-index: 300;
+    margin: 0 auto;
+    display: flex;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    flex-flow: row wrap;
+}
+
+#container #headerarea {
+   
+    justify-content: space-between;
+    -moz-box-align: center;
+    align-items: center;
+}
+*/
+
+
+
+
+
+#container {
+    margin-left: 20px; 
+    margin-right: 12px;
+    margin-top: 10px;  
+    background-color: #f1f4f7;
+    border-top: 3px solid #314252;         
+}
+ 
+#logo {
+    float: left;   
+}
+ 
+#menu {
+    float: left;   
+}
+
+/*************************************responsive*********************************/
+
+
+@media all and (min-width: 350px )
+
+{
+
+    #formulaire
+
+    {
+
+        width: 60%;
+		margin-top:20%;
+		}
+	
+		
+		h1{
+text-align:center;
+		margin-right:auto;
+		margin-left:auto;
+		
+		
+		}
+		
+		input[type=submit]{
+		
+		width:60%;
+		margin-left:20%;
+	}
+	
+#formulaire{
+	width:40%;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top:100px;
+	padding: 30px;
+    border-radius: 25px;
+    border: 1px solid #f1f1f1;
+    background-image:url("../img/formulaire.jpg");
+	background-image: cover;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
+}
+
+
+
+}
+
+	@media all and (max-width: 1000px)
+
+{
+	label{
+		font-size:20px;
+	}
+		
+		
+    #formulaire
+
+    {
+
+        width: 60%;
+		margin-top:20%;
+		}
+		
+		
+		
+		h1{
+
+		text-align:center;
+		margin-right:auto;
+		margin-left:auto;
+	
+		
+		}
+		
+		input[type=submit]{
+		
+		width:60%;
+		margin-left:20%;
+	}
+	
+#formulaire{
+	width:40%;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top:100px;
+	padding: 30px;
+    border-radius: 25px;
+    border: 1px solid #f1f1f1;
+    background-image:url("../img/formulaire.jpg");
+	background-image: cover;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+}
+
+
+	@media all and (max-width:650px)
+
+{
+	
+		#log{
+			font-size:20px;
+		}
+    #formulaire
+
+    {
+
+        width: 60%;
+		margin-top:20%;
+		}
+		
+		
+		
+		h1{
+		
+		font-size:25px;
+		margin-left:-12%;
+		color:black;
+		
+		}
+		
+		input[type=submit]{
+		
+		width:60%;
+		margin-left:20%;
+	}
+	
+	
+	
+#formulaire{
+	width:40%;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top:100px;
+	padding: 30px;
+    border-radius: 25px;
+    border: 1px solid #f1f1f1;
+    background-image:url("../img/formulaire.jpg");
+	background-image: cover;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+}
+
+
+	@media all and (min-height: 400px)
+
+{
+
+    #formulaire
+
+    {
+
+        width: 60%;
+		margin-top:20%;
+		}
+		
+		
+		
+		h1{
+
+		text-align:center;
+		margin-right:auto;
+		margin-left:auto;
+	
+		
+		}
+		
+		input[type=submit]{
+		
+		width:60%;
+		margin-left:20%;
+	}
+	
+#formulaire{
+	width:40%;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top:5%;
+	padding: 30px;
+    border-radius: 25px;
+    border: 1px solid #f1f1f1;
+    background-image:url("../img/formulaire.jpg");
+	background-image: cover;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+}
+
+	
+	
