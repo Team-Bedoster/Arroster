@@ -16,7 +16,7 @@
 			<br/>
 			<label>Mot de passe:</label><input type="password" name="password" required/>
 			<br/>
-			<input type="submit" value="Login" />
+			<input type="submit" value="Login" id="log" />
 		
 		</form>
 	

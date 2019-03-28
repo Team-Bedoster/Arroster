@@ -9,7 +9,7 @@ else
 }
 ?>
 
-
+<body>
 <head>
 <html lang="fr">
 <html>
@@ -17,9 +17,10 @@ else
 <link rel="stylesheet" href="css/css_header.css"/>
 
 </head>
+
 <div id = "container">
 	
-	<div id="headerarea">
+	
 	
 		<div id="logo">
 		<a href="overview.php">
@@ -29,12 +30,11 @@ else
     
 		<div id="search">
 			<form class = "s" method="post" name="headerseach">
-				<input id="searchtext" type="text" placeholder=" Rechercher..." >
-				<input id="boutonsearch" type="image" src="img/bouton.png" onClick="clickit(this);">
-					
+				<input id="searchtext" type="text" placeholder=" Rechercher..." ></div>
+			<div id="bouton">	<input id="boutonsearch" type="image" src="img/bouton.png" onClick="clickit(this);">
+				</div>	
 			</form>
-		</div>
-	
+		
 	
 		
 		<nav id="menu">
@@ -50,5 +50,5 @@ else
 		</nav>
 		
 	</div>
-</div>
+</body>
 </html>
