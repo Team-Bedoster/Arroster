@@ -1,5 +1,4 @@
 
-
 #container {
 	top:0;
 	left:0;
@@ -9,7 +8,7 @@
 	border-bottom: 8px solid #01796F;
 	position: fixed;
 	background-color: #EEEEEE;
-	opacity: 0.8;
+	
 	transition: 1s;
 	margin-bottom: 0%;
 	z-index: 300;
@@ -39,6 +38,7 @@ body{
 	max-width: 100%;
 	margin: 0;
 	padding: 0;
+	background-color:#EEEEEE;
 }
 
 
@@ -51,14 +51,7 @@ body{
 	margin-top: -2%;
 }
  
-#search{
-	width: 18%;
-	height: 100%;
-	margin-left: 2%;
-	margin-bottom: 2%;
-	margin-right: 15%;
-	
-}
+
 #searchtext{
 	width: 100%;
 	height: 40px;
@@ -159,13 +152,214 @@ ul li:hover a{
 	color: black;
 }
 
+
+
+#bouton{
+	float:left;
+
+	
+}
+
+#search{
+	float:left;
+	margin-left:5%;
+	
+	
+	
+}
+
+#bouton,#search{
+	width:15%;
+	height:auto;
+	margin-top:2%;
+}
+
 #boutonsearch{
-	margin-left: 100%;
-	margin-top: -12%;
-	width: 20%;
-	height: 194%;
-	border: 1px solid black;
+	height:40px;
+	
+	
 }
 
 
 
+@media all and (max-width: 1400px){
+	
+	#search{
+		width:20%;
+	}
+
+	#menu{
+		margin-right:-2%;
+	}
+		
+	#logo{
+		
+		margin-left:1%;
+		
+	}
+	
+}	
+
+@media all and (max-width: 800px){
+	
+	#search{
+		width:30%;
+	}
+
+	#menu{
+		margin-right:5%;
+	}
+		
+	#logo{
+		margin-top:1%;
+		width:2%;
+		margin-left:1%;
+		
+	}
+
+}	
+
+@media all and (max-height: 500px){
+	
+	#container{
+		height:15%;
+		background-color:white;
+		
+	}
+	#searchtext{
+		margin-left:-5000%
+		
+	}
+	#boutonsearch{
+		margin-left:-500%;
+	}
+	li{
+		
+		font-size:9px;;
+	}
+	#menu{
+		
+		margin-top:1%;
+		margin-left:20%;
+	}
+		
+	#logo{
+		
+		margin-top:1000%;
+		
+	}
+}
+
+
+@media all and (max-width: 450px){
+	
+	#container{
+		height:20%;
+		background-color:white;
+		
+	}
+	#searchtext{
+		margin-left:-50000%
+		
+	}
+	#boutonsearch{
+		margin-left:-50000%;
+	}
+	li{
+		
+		font-size:9px;;
+	}
+	#menu{
+		
+		margin-top:6%;
+		margin-left:-60%;
+	}
+		
+	#logo{
+		
+		margin-top:10000%;
+		
+	}
+	
+}	
+
+
+@media all and (min-height: 1000px){
+	#search{
+		width:20%;
+		
+	}
+	#container{
+		height:10%;
+		background-color:white;
+		
+	}
+	
+	}
+	li{
+		
+		font-size:10px;;
+	}
+	#menu{
+		
+		margin-top:1%;
+		margin-left:-15%;
+	}
+	
+	
+	
+}
+
+
+@media all and (min-height: 1024px){
+	#search{
+		width:20%;
+		
+	}
+	#container{
+		height:10%;
+		background-color:white;
+		
+	}
+	
+	}
+	li{
+		
+		font-size:10px;;
+	}
+	#menu{
+		
+		margin-top:1%;
+		margin-left:-15%;
+	}
+	
+	
+	
+}
+
+
+@media all and (min-width: 1024px){
+	#search{
+		width:20%;
+		
+	}
+	#container{
+		height:10%;
+		background-color:white;
+		
+	}
+	
+	}
+	li{
+		
+		font-size:12px;;
+	}
+	#menu{
+		
+		margin-top:1%;
+		margin-left:-12%;
+	}
+	
+	
+	
+}
