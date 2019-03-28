@@ -211,9 +211,10 @@ ul li:hover a{
 	}
 		
 	#logo{
-		margin-top:1%;
+		
 		width:2%;
 		margin-left:1%;
+		
 		
 	}
 
@@ -222,6 +223,7 @@ ul li:hover a{
 @media all and (max-height: 500px){
 	
 	#container{
+	
 		height:15%;
 		background-color:white;
 		
@@ -251,10 +253,10 @@ ul li:hover a{
 }
 
 
-@media all and (max-width: 450px){
+@media all and (max-width: 550px){
 	
 	#container{
-		height:20%;
+		height:15%;
 		background-color:white;
 		
 	}
@@ -277,7 +279,7 @@ ul li:hover a{
 		
 	#logo{
 		
-		margin-top:10000%;
+		margin-left:-45%;
 		
 	}
 	
@@ -293,12 +295,13 @@ ul li:hover a{
 		height:10%;
 		background-color:white;
 		
+		
 	}
 	
 	}
 	li{
 		
-		font-size:10px;;
+		font-size:10px;
 	}
 	#menu{
 		
@@ -325,7 +328,7 @@ ul li:hover a{
 	}
 	li{
 		
-		font-size:10px;;
+		font-size:10px;
 	}
 	#menu{
 		
@@ -352,7 +355,7 @@ ul li:hover a{
 	}
 	li{
 		
-		font-size:12px;;
+		font-size:12px;
 	}
 	#menu{
 		
@@ -361,5 +364,35 @@ ul li:hover a{
 	}
 	
 	
+	
+}
+
+
+@media all and (min-height: 1000px){
+	#search{
+		width:20%;
+		
+	}
+	#container{
+		height:10%;
+		background-color:white;
+		
+		
+	}
+	
+	}
+	li{
+		
+		font-size:10px;
+	}
+	#menu{
+		
+		margin-top:1%;
+		margin-left:-15%;
+	}
+	
+	#logo{
+		
+	margin-top:-4%;}
 	
 }
